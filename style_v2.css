@@ -1,0 +1,318 @@
+html, body {
+    width: 100%;
+    height:100%;
+}
+
+body{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; 
+}
+
+/* #wrapper {
+    width: 600px;
+    margin: 10px 8% 0 8%;
+} */
+#wrapper {
+    display: block;
+    max-width: 960px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.titre {
+    display: block; 
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+}
+.titre div {
+    text-align: center;
+}
+
+.button-container{
+    text-align:center;
+    margin-top:30px;
+}
+
+.soumettre{
+    width: 150px; /* Ancho del botón */
+    height: 48px; /* Alto del botón */
+    font-size: 28px;
+}
+
+#inputArea{
+    /* text-align: center; */
+    width: 100%;
+    height: 60px;
+}
+
+.number-input-container-facile {
+    width: 253px;
+    margin: 20px auto 0 auto;
+}
+
+.number-input-container-medium {
+    width: 380px;
+    margin: 20px auto 0 auto;
+}
+
+.number-input-container-difficile {
+    width: 636px;
+    margin: 20px auto 0 auto;
+}
+
+#sauvegard {
+    display: block;
+    /* transform: translate(-50%, -50%); */
+    width: 214px;
+    margin: 7px auto;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
+  .footer button {
+    display: inline-block;
+    margin: 5px 10px;
+    width: 160px;
+    height: 75px;
+  }
+/*----------*/
+
+
+
+button{
+    display: block;
+    width: 200px; /* Ancho del botón */
+    height: 75px; /* Alto del botón */
+    font-size: 21px; /* Tamaño de la fuente del botón */
+             
+    border-radius: 30px;
+    border: 3px solid black;
+    font-family: 'Trebuchet MS', sans-serif;
+    transition: background-color 0.3s ease; /* Transición suave */
+    margin: 0 auto;
+}
+
+button:hover{
+    background-color: grey;
+    transform: scale(1.05);
+    border: 4px solid black;
+    
+}
+.fermer{
+    width: 60px; 
+    height: 20px; 
+    font-size: 10px;
+    
+}
+
+.Vert{
+    color: green;            
+    font-weight: bold;}
+
+
+.Jaune{
+    color: #fddd5a;
+    font-weight: bold;}
+
+.Rouge{
+    color:red;
+    font-weight: bold;}
+
+.Hard{
+    background-color: red;}
+.Hard:hover{
+    background-color: #9B0505;}
+
+.Easy{
+    background-color: green;}
+.Easy:hover{
+    background-color: #0F6310;}
+.Medium{
+    background-color:  #fddd5a;}
+.Medium:hover{
+    background-color: #7D781E;}
+
+
+
+.container{
+    display: flex; 
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    border-radius: 100px;       
+}
+.container2{
+    position: fixed;
+    bottom: 10px; 
+    left: 10px; 
+    padding: 10px 20px;
+    margin: auto;
+    justify-content: center;
+   
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    border-radius: 100px;            
+}
+
+.container2 button{
+    display: inline-block;
+}
+.help-menu {
+    display: none; 
+    position: fixed; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; 
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.ball-result {
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 5px; 
+    font-size: 22px;
+    }
+
+
+.Green { background-color: green; }
+.Yellow { background-color: yellow; }
+.Red { background-color: red; }
+
+.number-input {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+}
+
+.number-input-difficile {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+}
+
+
+
+@media (max-width: 1400px),(max-height: 740px) {
+
+    .titre {
+        font-size: 25px;
+    }
+
+    .soumettre {
+        width: 135px;
+        height: 45px;
+        font-size: 24px;
+    }
+
+    .number-input-container-facile {
+        width: 213px;
+    }
+
+    .number-input-container-medium {
+        width: 320px;
+    }
+
+    .number-input-container-difficile {
+        width: 536px;
+        margin: 20px auto 0 auto;
+    }
+
+    .number-input {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+    }
+
+    .number-input-difficile {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    #sauvegard {
+        width: 173px;
+    }
+
+    .ball-result {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    .footer button {
+        width: 160px;
+    }
+
+}
+
+@media (max-width: 492px) {
+
+    .footer button {
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 304px),(max-height: 585px) {
+
+    #sauvegard {
+        width: 153px;
+        margin: 0 auto;
+    }
+
+    .ball-result {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .footer button {
+        width: 90px;
+        height: 60px;
+    }
+
+}
+ 
+
+
+
